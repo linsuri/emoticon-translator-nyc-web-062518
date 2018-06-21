@@ -4,7 +4,8 @@ require "yaml"
 def load_library(file_path)
   # code goes here
   emoticons = YAML.load_file(file_path)
-  emoticons
+  emoticons.each do |key, value|
+    
 end
 
 def get_japanese_emoticon
