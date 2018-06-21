@@ -5,7 +5,7 @@ require "pry"
 def load_library(file_path)
   # code goes here
   emoticons = YAML.load_file(file_path)
-  emoticons.each do |key, value|
+#  emoticons.each do |key, value|
   end
 end
 
