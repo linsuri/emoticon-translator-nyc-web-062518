@@ -15,13 +15,15 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here
   library = load_library(file_path)
+  output = ""
   library["get_emoticon"].each do |english, japanese|
     if emoticon == english
-      japanese
+      output = japanese
     else 
-      "Sorry, that emoticon was not found"
+      output = "Sorry, that emoticon was not found"
     end
-  end  
+  end
+  output
 end
 
 def get_english_meaning
