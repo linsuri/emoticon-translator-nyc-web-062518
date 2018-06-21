@@ -18,6 +18,8 @@ def get_japanese_emoticon(file_path, emoticon)
   library["get_emoticon"].each do |english, japanese|
     if emoticon == english
       return japanese
+    else 
+      return ""
     end
   end  
 end
