@@ -1,6 +1,5 @@
 # require modules here
 require "yaml"
-require "pry"
 
 def load_library(file_path)
   library = {"get_meaning" => {}, "get_emoticon" => {}}
@@ -12,7 +11,7 @@ def load_library(file_path)
   end  
   library  
 end
-binding.pry
+
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here
   library = load_library(file_path)
